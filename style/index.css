@@ -46,3 +46,47 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* end of reset */
+
+h1 {
+	font-size: 30px;
+}
+.header-container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-menu {
+	display: flex;
+}
+
+.nav-menu a {
+	border: 2px solid grey;
+	color: crimson;
+	padding: 5px;
+}
+
+.banner{
+	display: flex;
+	justify-content: center;
+
+}
+
+.gallery {
+	display: flex;
+	align-content: center;
+}
+
+.gallery-row-1 {
+	display: flex;
+	justify-content: center;
+	align-content: space-around;
+	flex-flow: row nowrap;
+}
+
+.gallery-row-2 {
+	display: flex;
+	justify-content: center;
+	align-content: space-around;
+	flex-flow: row nowrap;
+}
