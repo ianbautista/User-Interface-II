@@ -48,6 +48,9 @@ table {
 }
 /* end of reset */
 
+body {
+	padding: 20px 0;
+}
 h1 {
 	font-size: 30px;
 }
@@ -69,6 +72,7 @@ h1 {
 .banner{
 	display: flex;
 	justify-content: center;
+	padding: 20px;
 
 }
 
@@ -79,16 +83,20 @@ h1 {
 
 .gallery-row-1 {
 	display: flex;
-	justify-content: center;
-	align-content: space-around;
+	box-sizing: border-box;
+	width: 100%;
+	justify-content: space-between;
 	flex-flow: row nowrap;
+	padding: 20px 10px;
 }
 
 .gallery-row-2 {
 	display: flex;
-	justify-content: center;
-	align-content: space-around;
+	box-sizing: border-box;
+	width: 100%;
+	justify-content: space-between;
 	flex-flow: row nowrap;
+	padding: 20px 10px;
 }
 
 footer {
