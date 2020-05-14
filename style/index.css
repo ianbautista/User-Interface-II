@@ -47,9 +47,14 @@ table {
 	border-spacing: 0;
 }
 /* end of reset */
+
 /* * {
 	border: 2px solid red !important;
 } */
+
+html {
+	font-size: 62.5%;
+}
 
 body {
 	padding: 20px 0;
@@ -283,10 +288,10 @@ footer {
 
 /* ===== Start of Media Queries ===== */
 
-@media (max-width: 500px){
+@media (max-width: 800px){
 
 }
 
-@media (max-width: 800px){
+@media (max-width: 500px){
 	
 }
