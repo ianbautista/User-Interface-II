@@ -72,6 +72,7 @@ h1 {
 .nav-menu a {
 	border: 2px solid lightgray;
 	background-color: lightgray;
+	border-radius: 10%;
 	width: 50px;
 	color: crimson;
 	padding: 5px;
@@ -148,13 +149,40 @@ h1 {
 
 .gallery-row a:hover {
 	background-color: crimson;
-	color: white;
 }
 
 .gallery-row a p {
 	text-align: center;
-	padding-top: 10px;
+	padding: 10px;
 	color: crimson;
+}
+
+.about-container {
+	display: flex;
+	box-sizing: border-box;
+	width: 100%;
+	flex-direction: column;
+	align-content: center;
+	padding: 0 auto;
+	padding-bottom: 5%;
+	text-align: center;
+}
+
+.about img {
+	width: 15%;
+	height: 15%;
+	border-radius: 50%;
+}
+
+
+#about-name {
+	font-size: 30px;
+}
+
+#about-text{
+	font-size: 30px;
+	width: 50%;
+	margin: auto;
 }
 
 footer {
@@ -194,4 +222,20 @@ footer {
 
 .social-media-buttons img {
 	padding: 15px 30px;
+}
+
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.contact-form{
+	display: inline-block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border: 2px solid lightgray;
+	border-radius: 20px;
+	padding: 15px;
 }
