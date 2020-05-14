@@ -84,13 +84,18 @@ h1 {
 	border: 2px solid white;
 }
 
+#on-page {
+	background-color: white;
+	border: 2px solid white;
+}
+
 .banner-container {
 	display: flex;
 	justify-content: center;
 	padding: 40px;
 }
 
-.banner{
+.banner-home{
 	display: flex;
 	box-sizing: border-box;
 	flex-direction: column;
@@ -100,6 +105,42 @@ h1 {
 	width: 1200px;
 	height: 600px;
 	background-image: url(https://picsum.photos/1300/600);
+}
+
+.banner-about{
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	width: 1200px;
+	height: 600px;
+	background-image: url(https://picsum.photos/1301/600);
+}
+
+.banner-projects{
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	width: 1200px;
+	height: 600px;
+	background-image: url(https://picsum.photos/1300/601);
+}
+
+.banner-contact{
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	width: 1200px;
+	height: 600px;
+	background-image: url(https://picsum.photos/1299/600);
 }
 
 .banner p {
