@@ -60,7 +60,7 @@ body {
 	padding: 20px 0;
 }
 h1 {
-	font-size: 30px;
+	font-size: 3.5rem;
 	color: crimson;
 }
 .header-container{
@@ -80,6 +80,7 @@ h1 {
 	border-radius: 10%;
 	width: 50px;
 	color: crimson;
+	font-size: 1.6rem;
 	padding: 5px;
 	text-decoration: none;
 }
@@ -149,7 +150,7 @@ h1 {
 }
 
 .banner p {
-	font-size: 60px;
+	font-size: 6rem;
 	color: whitesmoke;
 	background-blend-mode: darken;
 }
@@ -164,6 +165,7 @@ h1 {
 	width: 150px;
 	background-color: white;
 	color: crimson;
+	font-size: 1.6rem;
 	text-decoration: none;
 }
 
@@ -201,6 +203,7 @@ h1 {
 	text-align: center;
 	padding: 10px;
 	color: crimson;
+	font-size: 1.6rem;
 }
 
 .about-container {
@@ -222,11 +225,11 @@ h1 {
 
 
 #about-name {
-	font-size: 30px;
+	font-size: 3rem;
 }
 
 #about-text{
-	font-size: 30px;
+	font-size: 3rem;
 	width: 50%;
 	margin: auto;
 }
@@ -251,6 +254,7 @@ footer {
 	width: 230px;
 	background-color: white;
 	color: crimson;
+	font-size: 1.6rem;
 	text-decoration: none;
 }
 
