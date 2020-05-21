@@ -2,300 +2,346 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /* end of reset */
-
 /* * {
 	border: 2px solid red !important;
 } */
-
+.banner-style {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 1200px;
+  height: 600px;
+}
 html {
-	font-size: 62.5%;
+  font-size: 62.5%;
 }
-
 body {
-	padding: 20px 0;
+  padding: 20px 0;
 }
-h1 {
-	font-size: 3.5rem;
-	color: crimson;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
 }
-.header-container{
-	display: flex;
-	justify-content: space-between;
-	padding: 0 15px;
+.header-container h1 {
+  font-size: 3.5rem;
+  color: crimson;
 }
-
-.nav-menu {
-	display: flex;
-	align-items: center;
+.header-container .nav-menu {
+  display: flex;
+  align-items: center;
 }
-
-.nav-menu a {
-	border: 2px solid lightgray;
-	background-color: lightgray;
-	border-radius: 10%;
-	width: 50px;
-	color: crimson;
-	font-size: 1.6rem;
-	padding: 5px;
-	text-decoration: none;
+.header-container .nav-menu a {
+  border: 2px solid lightgray;
+  background-color: lightgray;
+  border-radius: 10%;
+  width: 50px;
+  color: crimson;
+  font-size: 1.6rem;
+  padding: 5px;
+  text-decoration: none;
 }
-
-.nav-menu a:hover {
-	background-color: white;
-	border: 2px solid white;
+.header-container .nav-menu a:hover {
+  background-color: white;
+  border: 2px solid white;
 }
-
-#on-page {
-	background-color: white;
-	border: 2px solid white;
+.header-container .nav-menu #on-page {
+  background-color: white;
+  border: 2px solid white;
 }
-
 .banner-container {
-	display: flex;
-	justify-content: center;
-	padding: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
 }
-
-.banner-home{
-	display: flex;
-	box-sizing: border-box;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	width: 1200px;
-	height: 600px;
-	background-image: url(https://picsum.photos/1300/600);
+.banner-container .banner-home {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 1200px;
+  height: 600px;
+  background-image: url(https://picsum.photos/1300/600);
 }
-
-.banner-about{
-	display: flex;
-	box-sizing: border-box;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	width: 1200px;
-	height: 600px;
-	background-image: url(https://picsum.photos/1301/600);
+.banner-container .banner-about {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 1200px;
+  height: 600px;
+  background-image: url(https://picsum.photos/1301/600);
 }
-
-.banner-projects{
-	display: flex;
-	box-sizing: border-box;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	width: 1200px;
-	height: 600px;
-	background-image: url(https://picsum.photos/1300/601);
+.banner-container .banner-projects {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 1200px;
+  height: 600px;
+  background-image: url(https://picsum.photos/1300/601);
 }
-
-.banner-contact{
-	display: flex;
-	box-sizing: border-box;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	width: 1200px;
-	height: 600px;
-	background-image: url(https://picsum.photos/1299/600);
+.banner-container .banner-contact {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 1200px;
+  height: 600px;
+  background-image: url(https://picsum.photos/1299/600);
 }
-
-.banner p {
-	font-size: 6rem;
-	color: whitesmoke;
-	background-blend-mode: darken;
+.banner-container .banner p {
+  font-size: 6rem;
+  color: whitesmoke;
+  background-blend-mode: darken;
 }
-
-.banner a{
-	border: 2px solid white;
-	border-radius: 25px;
-	display: inline-block;
-	padding: 10px;
-	margin-top: 20px;
-	text-align: center;
-	width: 150px;
-	background-color: white;
-	color: crimson;
-	font-size: 1.6rem;
-	text-decoration: none;
+.banner-container .banner a {
+  border: 2px solid white;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  width: 150px;
+  background-color: white;
+  color: crimson;
+  font-size: 1.6rem;
+  text-decoration: none;
 }
-
-.banner a:hover {
-	color: white;
-	background-color: crimson;
-	border: 2px solid crimson;
+.banner-container .banner a:hover {
+  color: white;
+  background-color: crimson;
+  border: 2px solid crimson;
 }
-
 /* .gallery {
 	display: flex;
 	align-content: center;
 } */
-
 .gallery-row {
-	display: flex;
-	box-sizing: border-box;
-	width: 100%;
-	justify-content: space-between;
-	flex-flow: row nowrap;
-	padding: 25px 10px;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  padding: 25px 10px;
 }
-
 .gallery-row a {
-	display: flex;
-	flex-direction: column;
-	text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
 }
-
 .gallery-row a:hover {
-	background-color: crimson;
+  background-color: crimson;
 }
-
 .gallery-row a p {
-	text-align: center;
-	padding: 10px;
-	color: crimson;
-	font-size: 1.6rem;
+  text-align: center;
+  padding: 10px;
+  color: crimson;
+  font-size: 1.6rem;
 }
-
 .about-container {
-	display: flex;
-	box-sizing: border-box;
-	width: 100%;
-	flex-direction: column;
-	align-content: center;
-	padding: 0 auto;
-	padding-bottom: 5%;
-	text-align: center;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  flex-direction: column;
+  align-content: center;
+  padding: 0 auto;
+  padding-bottom: 5%;
+  text-align: center;
 }
-
-.about img {
-	width: 15%;
-	height: 15%;
-	border-radius: 50%;
+.about-container .about img {
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
 }
-
-
-#about-name {
-	font-size: 3rem;
+.about-container .about p {
+  font-size: 3rem;
+  width: 50%;
+  margin: auto;
 }
-
-#about-text{
-	font-size: 3rem;
-	width: 50%;
-	margin: auto;
-}
-
 footer {
-	display: flex;
-	background-color: lightgray;
-	height: 150px;
-	width: 100%;
-	display: inline-block;
-	text-align: center;
-	align-content: center;
-	justify-content: space-around;
+  display: flex;
+  background-color: lightgray;
+  height: 150px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+  justify-content: space-around;
 }
-
-.contact-link a{
-	border: 2px solid white;
-	border-radius: 25px;
-	display: inline-block;
-	padding: 10px;
-	margin-top: 20px;
-	width: 230px;
-	background-color: white;
-	color: crimson;
-	font-size: 1.6rem;
-	text-decoration: none;
+footer .contact-link a {
+  border: 2px solid white;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 20px;
+  width: 230px;
+  background-color: white;
+  color: crimson;
+  font-size: 1.6rem;
+  text-decoration: none;
 }
-
-.contact-link a:hover {
-	color: white;
-	background-color: crimson;
-	border: 2px solid crimson;
+footer .contact-link a:hover {
+  color: white;
+  background-color: crimson;
+  border: 2px solid crimson;
 }
-
-.social-media-buttons {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+footer .social-media-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.social-media-buttons img {
-	padding: 15px 30px;
+footer .social-media-buttons img {
+  padding: 15px 30px;
 }
-
 .form-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 2rem;
 }
-
-.contact-form{
-	display: inline-block;
-	margin: 0 auto;
-	margin-bottom: 30px;
-	border: 2px solid lightgray;
-	border-radius: 20px;
-	padding: 15px;
+.form-container .contact-form {
+  display: inline-block;
+  margin-bottom: 30px;
+  border: 2px solid lightgray;
+  border-radius: 20px;
+  padding: 15px;
 }
-
 /* ===== Start of Media Queries ===== */
-
-@media (max-width: 800px){
-
-}
-
-@media (max-width: 500px){
-	
-}
