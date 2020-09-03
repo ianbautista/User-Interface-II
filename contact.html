@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=    <h1> ABOUT </h1>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1> CONTACT </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <title>Contact | Christian Bautista</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1>Christian Bautista</h1>
+        <div class="nav-menu">
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a id="on-page" href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="banner-container">
+      <section class="banner-contact banner">
+        <p>Contact</p>
+      </section>
+    </div>
+    <div class="form-container">
+        <div class="contact-form">
+            <form action="send-mail.php" method="POST">
+                <label for="field_name">Name:</label>
+                <input type="text" id="field_name" name="sender_name">
+                <br /><br />
+            
+                <label for="field_email">Your e-mail:</label>
+                <input type="text" id="field_email" name="sender_email">
+                <br /><br />
+            
+                <label for="field_phone">Phone:</label>
+                <input type="text" id="field_phone" name="sender_phone">
+                <br /><br />
+            
+                <label for="field_message">Message:</label>
+                <textarea id="field_message" name="sender_message"></textarea>
+                <br /><br />
+            
+                <input type="submit" name="send_message" value="Send">
+            </form>
+        </div>
+    </div>
+    <footer>
+      <div class="contact-link">
+        <a href="contact.html">Contact Me</a>
+      </div>
+      <nav class="social-media-buttons">
+        <a href="https://www.linkedin.com/in/christianbautista/">
+          <img
+            src="http://pngimg.com/uploads/linkedIn/linkedIn_PNG32.png"
+            alt="linkedin"
+            width="35px"
+          />
+        </a>
+        <a href="https://www.instagram.com/xtianb/">
+          <img
+            src="http://pngimg.com/uploads/instagram/instagram_PNG11.png"
+            alt="instagram"
+            width="35px"
+          />
+        </a>
+        <a href="https://twitter.com/cafbautista">
+          <img
+            src="https://pngimg.com/uploads/twitter/twitter_PNG9.png"
+            alt="twitter"
+            width="35px"
+          />
+        </a>
+          </nav>
+      </nav>
+    </footer>
+  </body>
 </html>
